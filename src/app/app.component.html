@@ -18,7 +18,7 @@
           <button class="destroy" (click)="removeTodo(i)"></button>
         </div>
         <input class="edit" #edit [value]="todo.content" (keyup.enter)="updateContent(edit.value, i)"
-          (keyup.esc)="cancelUpdate(todo, i)" />
+          (keyup.esc)="cancelUpdate(todo, i)" [appAutofocus]="todo.isEdit" />
       </li>
     </ul>
   </section>

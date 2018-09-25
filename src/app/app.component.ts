@@ -50,7 +50,6 @@ export class AppComponent {
       _todo => new Todo(_todo.content, _todo.isCompleted, false)
     );
     this.refreshTodoList(idx, todo.toggleEdit());
-    target.focus();
   }
 
   updateContent(content: string, idx) {
